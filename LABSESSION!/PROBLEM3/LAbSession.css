@@ -1,0 +1,194 @@
+.topbar {
+    background-color: red;
+    text-align: end;
+    padding: 13px;
+    margin-bottom: initial;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    background: gray;
+    list-style: none;
+    margin: 0;
+    padding: 20px;
+}
+
+body{
+   
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .inputclass{
+    position: relative;
+    width: 350px;
+  }
+  .inputclass input{
+    font: optional;
+    width: 300px;
+    padding: 10px;
+    border: 1px solid silver;
+    border-radius: 5px;
+    outline: none;
+  }
+  .inputclass span{
+    position: absolute;
+    left: 0%;
+    padding: 10px;
+    pointer-events: none;
+    color: grey;
+    text-transform: uppercase;
+  }
+
+li {
+    color: #fff;
+    background: gray;
+    opacity: var(10px);
+    display: block;
+    float: left;
+    margin: 0px;
+    position: relative;
+    text-decoration: none;
+
+}
+
+li a {
+    color: #fff;
+    padding: 10px;
+    align-self: center;
+    margin: 0;
+}
+
+li:hover,
+li:focus-within {
+    background: black;
+    cursor: pointer;
+}
+
+li:focus-within a {
+    outline: none;
+
+}
+
+ul li ul {
+    background-color: gray;
+    visibility: hidden;
+    position: absolute;
+    margin: 0;
+    left: 0;
+    display: none;
+}
+
+ul li:hover>ul,
+ul li:focus-within>ul,
+ul li ul:hover,
+ul li ul:focus {
+    visibility: visible;
+    display: block;
+}
+
+ul li ul li {
+    clear: both;
+    width: 100%;
+}
+
+/* CSS Part for Question 2
+*/
+
+
+.bar {
+    width: 30px;
+    height: 100px;
+    margin: 10px;
+    display: inline-block;
+    position: relative;
+}
+
+.bar:before {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.bar:nth-child(1):before {
+    background-color: gray;
+    animation: bar1 2s forwards;
+}
+
+.bar:nth-child(2):before {
+    background-color: gray;
+    animation: bar2 2s forwards;
+}
+
+.bar:nth-child(3):before {
+    background-color: gray;
+    animation: bar3 2s forwards;
+}
+
+@keyframes bar1 {
+    from {
+        height: 0;
+    }
+
+    to {
+        height: 30%;
+    }
+}
+
+@keyframes bar2 {
+    from {
+        height: 0;
+    }
+
+    to {
+        height: 40%;
+    }
+}
+
+@keyframes bar3 {
+    from {
+        height: 0;
+    }
+
+    to {
+        height: 80%;
+    }
+}
+
+
+/*
+CSS Part for Goggle Form Demo
+*/
+.FormDemo {
+
+    padding: 50px;
+    text-align: center;
+    margin: 0%;
+    opacity: 100%;
+}
+
+.body {
+
+    background-image: url('D:\pexels-trace-hudson-2613946.jpg');
+    background-attachment: fixed; 
+     background-repeat: no-repeat; 
+     background-size: 100% 100%;
+}
+
+#setopacity {
+
+    font-size: 20px;
+    font-weight: bold;
+    opacity: 0.9;
+}
